@@ -1,0 +1,372 @@
+body { 
+  background-color: #1a1a1a; /* Dark background */
+  color: #d4af37; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Añadido para una fuente estándar */
+}
+.inactive {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.header-container {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://img.freepik.com/vector-premium/fondo-oscuro-abstracto-ceros-tonos-gris_444390-3371.jpg"); /* Ruta de la imagen de fondo */
+  background-size: cover; /* La imagen cubre todo el espacio del header */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.header-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #f6f2d160;
+}
+
+.barraNavegacion a {
+  color: #d4af37;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.barraNavegacion a:hover {
+  color: #fff;
+}
+
+.contenedorPrincipal {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Ajusta el ancho de las columnas, la foto ocupa 1 parte y el texto 2 partes */
+  gap: 20px; /* Espacio entre la foto y el texto */
+  align-items: start; /* Alinea los elementos al inicio verticalmente */
+  margin-top: 20px;
+  padding: 20px; /* Añade algo de padding al contenedor principal */
+}
+
+.fotoPerfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotoPerfil img {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.informacionPersonal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente dentro del contenedor */
+}
+
+.nombre {
+  font-size: 1.8rem;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.justified-text {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #eae5d7;
+  margin-right: 10px;
+}
+
+.detallesPersonales, .educacion, .habilidadesTech, .proyectos {
+  padding: 20px;
+}
+
+.informacionPersonal {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #3539345f;
+  color: #d4af37;
+  padding: 2px 0;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0; /* Ajustado para eliminar margen inferior */
+}
+
+/* Estudios */
+.table-container {
+  max-height: 400px; /* Ajusta este valor según el diseño */
+  overflow-y: auto; /* Habilita el scroll vertical */
+  background-color: #1e1e1e; /* Fondo de la tabla */
+  border-radius: 8px; /* Bordes redondeados para la tabla */
+  padding: 1rem; /* Espaciado interno */
+  position: relative; /* Necesario para los estilos del scrollbar */
+}
+
+/* Estilos para el contenido de la tabla */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+  text-align: left;
+  padding: 12px; /* Espaciado interno más grande */
+}
+
+.table-container th {
+  background-color: #333333; /* Fondo de las cabeceras */
+  color: #d9dac4; /* Texto de las cabeceras */
+  border-bottom: 2px solid #444444; /* Borde inferior de las cabeceras */
+}
+
+.table-container td {
+  background-color: #1e1e1e; /* Fondo de las celdas */
+  color: #e4e3d9; /* Texto de las celdas */
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #2a2a2a; /* Fondo alternado para las filas */
+}
+
+.table-container tr:hover {
+  background-color: #333333; /* Fondo cuando se pasa el mouse sobre una fila */
+}
+
+/* Estilos para el scrollbar en navegadores webkit */
+.table-container::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: rgba(30, 30, 30, 0.5); /* Fondo del track del scrollbar */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.7); /* Color del pulgar del scrollbar */
+  border-radius: 10px; /* Bordes redondeados del pulgar */
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.9); /* Color del pulgar al pasar el mouse */
+}
+
+/* Habilidades técnicas cuadrícula */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual ancho */
+  grid-template-rows: repeat(3, auto);   /* 3 filas de altura automática */
+  gap: 10px;                             /* Espacio entre las imágenes */
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item img {
+  max-width: 100%;  /* Asegúrate de que las imágenes no excedan el tamaño del contenedor */
+  height: 100%; 
+  width: 80%;
+  border-radius: 60%; /* Mantén la proporción de la imagen */
+}
+
+/* Proyectos */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajustado para un ajuste automático */
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #f8f9fa; /* Fondo claro para las tarjetas */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.project-content .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.project-content .btn:hover {
+  background-color: #0056b3;
+}
+/*idiomas*/
+.section {
+  padding: 40px;
+  width: 100%; /* La sección abarca el 100% del ancho de la pantalla */
+  box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #d4af37; /* Ocre dorado */
+  margin-bottom:30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+
+.idioma-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px; /* Limita el ancho del contenido a un máximo de 1000px */
+  width: 100%; /* El contenido abarca el 100% del contenedor */
+  margin: 0 auto; /* Centra el contenido */
+ 
+}
+
+.idioma {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Cada fila de idioma ocupa el 100% del contenedor */
+}
+
+.idioma-nombre {
+  font-size: 1.2rem;
+  color: #d4af37; /* Ocre */
+
+}
+
+.barra-progreso {
+  background-color: #333;
+  width: 70%; /* Las barras de progreso ocupan el 70% del espacio de cada fila */
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progreso {
+  background-color: #d4af37; /* Ocre dorado para el progreso */
+  height: 100%;
+  text-align: center;
+  color: #1c1c1c; /* Texto oscuro dentro de la barra */
+  line-height: 20px;
+  border-radius: 10px 0 0 10px;
+  transition: width 0.4s ease;
+}
+
+/* Hover en barras de progreso para efecto dinámico */
+.barra-progreso:hover .progreso {
+  filter: brightness(1.2);
+}
+
+
+.imagenIdiomas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.imagenIdiomas img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra de caja */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 70px; /* Transición suave para el efecto de hover */
+}
+
+.imagenIdiomas img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el ratón sobre la imagen */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el ratón sobre la imagen */
+}
+/*referencias*/
+
+.section {
+  padding: 40px;
+  margin: 20px 0;
+  width: 100%; /* La sección abarca el 100% del ancho de la pantalla */
+  max-width: 1200px; /* Limita el ancho máximo para mejor presentación */
+  box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido dentro de la sección */
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #d4af37; /* Ocre dorado */
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.referencia-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px; /* Limita el ancho del contenido a un máximo de 1000px */
+  width: 100%; /* El contenido abarca el 100% del contenedor */
+}
+
+.referencia {
+  background-color: #333; /* Fondo oscuro para cada referencia */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra de caja */
+  color: #f1f1f1; /* Texto claro */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.referencia-nombre {
+  font-size: 1.2rem;
+  color: #d4af37; /* Ocre dorado para el nombre */
+}
+
+.referencia-detalle,
+.referencia-contacto {
+  font-size: 1rem;
+  color: #f1f1f1; /* Texto claro */
+}
+
+
