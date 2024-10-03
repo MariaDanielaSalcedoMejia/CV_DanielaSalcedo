@@ -1,254 +1,329 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-  />
-  <link rel="stylesheet" href="./styles/app.css" />
-  <title>MDSM - CV</title>
-</head>
-<body>
-  <!-- Header -->
-  <header id="header" class="header-container bg-dark text-white">
-    <div class="text-center py-3">
-      <h1 class="header-title">El Camino hacia el Diseño: Una Historia de Evolución y Código</h1>
-    </div>
-    <nav class="barraNavegacion d-flex justify-content-center py-2">
-  <a href="#informacionPersonal" id="linkInformacion" class="linkNav px-3">Información Personal</a>
-  <a href="#educacion" id="linkEducacion" class="linkNav px-3">Educación</a>
-  <a href="#habilidades" id="linkHabilidades" class="linkNav px-3">Habilidades Técnicas</a>
-  <a href="#proyectos" id="linkProyectos" class="linkNav px-3">Proyectos</a>
-  <a href="#idiomas" id="linkIdiomas" class="linkNav px-3">Idiomas</a>
-  <a href="#referencias" id="linkReferencias" class="linkNav px-3">Referencias</a>
-</nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <title>MDSM - CV</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header-container bg-dark text-white">
+      <div class="text-center py-3">
+        <h1 class="header-title">
+          El Camino hacia el Diseño: Una Historia de Evolución y Código
+        </h1>
+      </div>
+      <nav class="barraNavegacion d-flex justify-content-center py-2">
+        <a href="#informacionPersonal" id="linkInformacion" class="linkNav px-3"
+          >Información Personal</a
+        >
+        <a href="#educacion" id="linkEducacion" class="linkNav px-3"
+          >Educación</a
+        >
+        <a href="#habilidades" id="linkHabilidades" class="linkNav px-3"
+          >Habilidades Técnicas</a
+        >
+        <a href="#proyectos" id="linkProyectos" class="linkNav px-3"
+          >Proyectos</a
+        >
+        <a href="#idiomas" id="linkIdiomas" class="linkNav px-3">Idiomas</a>
+        <a href="#referencias" id="linkReferencias" class="linkNav px-3"
+          >Referencias</a
+        >
+      </nav>
+    </header>
 
-  <!-- Sección de información personal -->
-  <section id="informacionPersonal" class=" container py-5 inactive">
-    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
-      <div id="fotoPerfil" class="fotoPerfil">
-        <img src="./src/img/foto_perfil.jpeg" alt="Foto de perfil" class="img-fluid rounded-circle" />
+    <!-- Sección de información personal -->
+    <section id="informacionPersonal" class="container py-5 inactive">
+      <div
+        class="d-flex flex-column flex-md-row justify-content-center align-items-center"
+      >
+        <div id="fotoPerfil" class="fotoPerfil">
+          <img
+            src="./src/img/foto_perfil.jpeg"
+            alt="Foto de perfil"
+            class="img-fluid rounded-circle"
+          />
+        </div>
+        <div class="detallesPersonales text-center text-md-start px-md-4">
+          <h2 class="nombre">¡Hola! Soy Maria Daniela Salcedo Mejia</h2>
+          <p class="justified-text">
+            Desarrolladora web con pasión por crear experiencias digitales
+            excepcionales. Con una sólida formación en tecnologías frontend y un
+            enfoque constante en el diseño centrado en el usuario, he trabajado
+            en proyectos que combinan funcionalidad y estética. Mi objetivo es
+            continuar aprendiendo y creciendo en un entorno que me permita
+            aplicar mis habilidades en desarrollo web y diseño UI, aportando
+            soluciones innovadoras a cada desafío.
+          </p>
+          <p class="text-secondary">
+            <i class="bi bi-envelope-fill"></i> daniela.salcedo@correo.com<br />
+            <i class="bi bi-phone-fill"></i> +123 456 7890<br />
+            <i class="bi bi-geo-alt-fill"></i> Bogotá, Colombia
+          </p>
+        </div>
       </div>
-      <div class="detallesPersonales text-center text-md-start px-md-4">
-        <h2 class="nombre">¡Hola! Soy Maria Daniela Salcedo Mejia</h2>
-        <p class="justified-text">
-          Desarrolladora web con pasión por crear experiencias digitales excepcionales. Con una sólida formación en tecnologías frontend y un enfoque constante en el diseño centrado en el usuario, he trabajado en proyectos que combinan funcionalidad y estética. Mi objetivo es continuar aprendiendo y creciendo en un entorno que me permita aplicar mis habilidades en desarrollo web y diseño UI, aportando soluciones innovadoras a cada desafío.
-        </p>
-        <p class="text-secondary">
-          <i class="bi bi-envelope-fill"></i> daniela.salcedo@correo.com<br>
-          <i class="bi bi-phone-fill"></i> +123 456 7890<br>
-          <i class="bi bi-geo-alt-fill"></i> Bogotá, Colombia
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Educación -->
-  <section id="educacion" class="container py-5 inactive">
-    <h2 class="text-center mb-5">Mis Estudios</h2>
-    <div class="table-container">
-      <table class="table table-striped table-hover align-middle">
-        <thead>
-          <tr>
-            <th scope="col">Título</th>
-            <th scope="col">Institución</th>
-            <th scope="col">Año</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Técnico en Programación de Software</td>
-            <td>SENA - Servicio Nacional de Aprendizaje</td>
-            <td>2023</td>
-          </tr>
-          <tr>
-            <td>Bootcamp Fullstack Avanzado</td>
-            <td>Talento Tech</td>
-            <td>2024</td>
-          </tr>
-          <tr>
-            <td>Certificación en Inteligencia Artificial</td>
-            <td>Google</td>
-            <td>2024</td>
-          </tr>
-          <tr>
-            <td>Certificación en Python</td>
-            <td>Google</td>
-            <td>2024</td>
-          </tr>
-          <tr>
-            <td>Certificación en Ciberseguridad</td>
-            <td>Google</td>
-            <td>2024</td>
-          </tr>
-          <tr>
-            <td>Curso de Python</td>
-            <td>Meta</td>
-            <td>2024</td>
-          </tr>
-          <tr>
-            <td>Certificación en UX/UI Design</td>
-            <td>Platzi</td>
-            <td>2022</td>
-          </tr>
-          <tr>
-            <td>Certificación en Desarrollo Web</td>
-            <td>Udemy</td>
-            <td>2021</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+    <!-- Educación -->
+    <section id="educacion" class="container py-5 inactive">
+      <h2 class="text-center mb-5">Mis Estudios</h2>
+      <div class="table-container">
+        <table class="table table-striped table-hover align-middle">
+          <thead>
+            <tr>
+              <th scope="col">Título</th>
+              <th scope="col">Institución</th>
+              <th scope="col">Año</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Técnico en Programación de Software</td>
+              <td>SENA - Servicio Nacional de Aprendizaje</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Bootcamp Fullstack Avanzado</td>
+              <td>Talento Tech</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Certificación en Inteligencia Artificial</td>
+              <td>Google</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Certificación en Python</td>
+              <td>Google</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Certificación en Ciberseguridad</td>
+              <td>Google</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Curso de Python</td>
+              <td>Meta</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Certificación en UX/UI Design</td>
+              <td>Platzi</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Certificación en Desarrollo Web</td>
+              <td>Udemy</td>
+              <td>2021</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-  <!-- Habilidades Técnicas -->
-  <section id="habilidades" class="container py-5 inactive">
-    <h2 class="text-center mb-5">Habilidades Técnicas</h2>
-    <div class="row text-center">
-      <div class="col-6 col-md-4 col-lg-2 mb-4">
-        <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="HTML" width="80" height="80" />
-        <p>HTML</p>
+    <!-- Habilidades Técnicas -->
+    <section id="habilidades" class="container py-5 inactive">
+      <h2 class="text-center mb-5">Habilidades Técnicas</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/919/919827.png"
+            alt="HTML"
+          />
+          <p>HTML</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/919/919826.png"
+            alt="CSS"
+          />
+          <p>CSS</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://thumbs.dreamstime.com/b/logotipo-del-javascript-136765881.jpg"
+            alt="JavaScript"
+          />
+          <p>JavaScript</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vwq2o3rdEjNxdTlclPJ9ya_xhPhrBZ_5fA&s"
+            alt="Bootstrap"
+          />
+          <p>Bootstrap</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://www.drupal.org/files/styles/grid-3-2x/public/project-images/screenshot_361.png?itok=w4CzcWyb"
+            alt="Tailwind"
+          />
+          <p>Tailwind CSS</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://w7.pngwing.com/pngs/271/444/png-transparent-angular-icon-hd-logo.png"
+            alt="Angular"
+          />
+          <p>Angular</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s"
+            alt="GitHub"
+          />
+          <p>GitHub</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1v8rzEI36nj1skL0qGUYUMPOCOAHLSXN0TZwBGITqm8uZ-gNiy3Ytw60oSS8Ac55gkWs&usqp=CAU"
+            alt="API REST"
+          />
+          <p>API REST</p>
+        </div>
+        <div class="grid-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFe3Fcf0KBPIgv0nOd3CM9nr6xHoZoWlKKt4Em81HbbeIROphh0-S44evn3MP1Swd1fek&usqp=CAU"
+            alt="React"
+          />
+          <p>React</p>
+        </div>
       </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-4">
-        <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="CSS" width="80" height="80" />
-        <p>CSS</p>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-4">
-        <img src="https://thumbs.dreamstime.com/b/logotipo-del-javascript-136765881.jpg" alt="JavaScript" width="80" height="80" />
-        <p>JavaScript</p>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-4">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vwq2o3rdEjNxdTlclPJ9ya_xhPhrBZ_5fA&s" alt="Bootstrap" width="80" height="80" />
-        <p>Bootstrap</p>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-4">
-        <img src="https://www.drupal.org/files/styles/grid-3-2x/public/project-images/screenshot_361.png?itok=w4CzcWyb" alt="Tailwind" width="80" height="80" />
-        <p>Tailwind CSS</p>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-4">
-        <img src="https://w7.pngwing.com/pngs/271/444/png-transparent-angular-icon-hd-logo.png" alt="Angular" width="80" height="80" />
-        <p>Angular</p>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-4">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s" alt="GitHub" width="80" height="80" />
-        <p>GitHub</p>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-4">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1v8rzEI36nj1skL0qGUYUMPOCOAHLSXN0TZwBGITqm8uZ-gNiy3Ytw60oSS8Ac55gkWs&usqp=CAU" alt="API REST" width="80" height="80" />
-        <p>API REST</p>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2 mb-4">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFe3Fcf0KBPIgv0nOd3CM9nr6xHoZoWlKKt4Em81HbbeIROphh0-S44evn3MP1Swd1fek&usqp=CAU" alt="React" width="80" height="80" />
-        <p>React</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Proyectos -->
-  <section id="proyectos" class="container py-5 inactive">
-    <h2 class="text-center mb-5">Proyectos</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="App de Clima" class="img-fluid" />
-          <div class="project-content">
-            <h3>App de Clima</h3>
-            <p>Aplicación que muestra el pronóstico del clima utilizando una API de clima. Incluye geolocalización y búsqueda manual por ciudad.</p>
-            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+    <!-- Proyectos -->
+    <section id="proyectos" class="container py-5 inactive">
+      <h2 class="text-center mb-5">Proyectos</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="project-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="App de Clima"
+              class="img-fluid"
+            />
+            <div class="project-content">
+              <h3>App de Clima</h3>
+              <p>
+                Aplicación que muestra el pronóstico del clima utilizando una
+                API de clima. Incluye geolocalización y búsqueda manual por
+                ciudad.
+              </p>
+              <a href="#" class="btn btn-primary">Ver Proyecto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="project-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="App de Películas"
+              class="img-fluid"
+            />
+            <div class="project-content">
+              <h3>App de Películas</h3>
+              <p>
+                Aplicación que permite buscar y filtrar películas utilizando una
+                API REST de películas. Incluye información detallada y reseñas.
+              </p>
+              <a href="#" class="btn btn-primary">Ver Proyecto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="project-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="App de Películas"
+              class="img-fluid"
+            />
+            <div class="project-content">
+              <h3>App de Películas</h3>
+              <p>
+                Aplicación que permite buscar y filtrar películas utilizando una
+                API REST de películas. Incluye información detallada y reseñas.
+              </p>
+              <a href="#" class="btn btn-primary">Ver Proyecto</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="App de Películas" class="img-fluid" />
-          <div class="project-content">
-            <h3>App de Películas</h3>
-            <p>Aplicación que permite buscar y filtrar películas utilizando una API REST de películas. Incluye información detallada y reseñas.</p>
-            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+    </section>
+
+    <!-- Idiomas -->
+    <section id="idiomas" class="container py-5 inactive">
+      <h2 class="section-title">Idiomas</h2>
+      <div class="imagenIdiomas">
+        <img
+          src="https://media.istockphoto.com/id/959743546/es/vector/nube-de-palabras-de-bienvenida-en-diferentes-idiomas.jpg?s=612x612&w=0&k=20&c=uf9etKXxmXsJCYchRE_F9LFnaoV_C_r1G8WdBFrGSpQ="
+          alt="idiomas"
+        />
+      </div>
+      <div class="idioma-container">
+        <div class="idioma">
+          <span class="idioma-nombre">Español</span>
+          <div class="barra-progreso">
+            <div class="progreso" style="width: 100%">Nativo</div>
+          </div>
+        </div>
+        <div class="idioma">
+          <span class="idioma-nombre">Inglés</span>
+          <div class="barra-progreso">
+            <div class="progreso" style="width: 70%">Intermedio</div>
+          </div>
+        </div>
+        <div class="idioma">
+          <span class="idioma-nombre">Francés</span>
+          <div class="barra-progreso">
+            <div class="progreso" style="width: 70%">Basico</div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="App E-commerce" class="img-fluid" />
-          <div class="project-content">
-            <h3>App E-commerce</h3>
-            <p>Tienda online con carrito de compras, integración de pagos y manejo de usuarios con autenticación.</p>
-            <a href="#" class="btn btn-primary">Ver Proyecto</a>
-          </div>
+    </section>
+
+    <!-- Referencias -->
+    <section id="referencias" class="container py-5 inactive">
+      <div class="section-title">Referencias Personales</div>
+      <div class="referencia-container">
+        <div class="referencia">
+          <div class="referencia-nombre">German Edmundo Salcedo Diaz</div>
+          <div class="referencia-detalle">Arquitecto</div>
+          <div class="referencia-contacto">Móvil: 3046754218</div>
+        </div>
+        <div class="referencia">
+          <div class="referencia-nombre">Santiago Salcedo Mejia</div>
+          <div class="referencia-detalle">Analista QA - HABI</div>
+          <div class="referencia-contacto">Móvil: 3208464883</div>
+        </div>
+        <div class="referencia">
+          <div class="referencia-nombre">Profesional I TI</div>
+          <div class="referencia-detalle">Profesional I TI - IPM</div>
+          <div class="referencia-contacto">Móvil: 305 7070282</div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Idiomas -->
- 
-   <section id="idiomas" class="container py-5 inactive">
-  <h2 class="section-title">Idiomas</h2>
-  <div class="imagenIdiomas">
-    <img  src="https://media.istockphoto.com/id/959743546/es/vector/nube-de-palabras-de-bienvenida-en-diferentes-idiomas.jpg?s=612x612&w=0&k=20&c=uf9etKXxmXsJCYchRE_F9LFnaoV_C_r1G8WdBFrGSpQ=" alt="idiomas">
-  </div>
-    <div class="idioma-container">
-    <div class="idioma">
-      <span class="idioma-nombre">Español</span>
-      <div class="barra-progreso">
-        <div class="progreso" style="width: 100%;">Nativo</div>
-      </div>
-    </div>
-    <div class="idioma">
-      <span class="idioma-nombre">Inglés</span>
-      <div class="barra-progreso">
-        <div class="progreso" style="width: 70%;">Intermedio</div>
-      </div>
-    </div>
-    <div class="idioma">
-      <span class="idioma-nombre">Francés</span>
-      <div class="barra-progreso">
-        <div class="progreso" style="width: 70%;">Intermedio</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- Referencias -->
-  <section id="referencias" class="container py-5 inactive">
-  
-  <div class="section-title">Referencias Personales</div>
-  <div class="referencia-container">
-    <div class="referencia">
-      <div class="referencia-nombre">Juan Pérez</div>
-      <div class="referencia-detalle">Desarrollador en XYZ Corp.</div>
-      <div class="referencia-contacto">Email: juan.perez@example.com</div>
-    </div>
-    <div class="referencia">
-      <div class="referencia-nombre">Ana García</div>
-      <div class="referencia-detalle">Gerente en ABC Ltd.</div>
-      <div class="referencia-contacto">Email: ana.garcia@example.com</div>
-    </div>
-    <div class="referencia">
-      <div class="referencia-nombre">Carlos López</div>
-      <div class="referencia-detalle">Co-fundador en Tech Innovations</div>
-      <div class="referencia-contacto">Email: carlos.lopez@example.com</div>
-    </div>
-  </div>
-</section>
- 
-
-  <!-- Footer -->
-  <footer class="text-center py-3 bg-dark text-white">
-    <p>&copy; 2024 Maria Daniela Salcedo Mejia. Todos los derechos reservados.</p>
-  </footer>
-  <script src="/src/app.js"></script>
-</body>
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+      <p>
+        &copy; 2024 Maria Daniela Salcedo Mejia. Todos los derechos reservados.
+      </p>
+    </footer>
+    <script src="/src/app.js"></script>
+  </body>
 </html>
