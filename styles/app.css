@@ -1,5 +1,6 @@
 /* === Estilos Globales === */
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
@@ -114,7 +115,8 @@ footer {
   padding: 10px 0;
   text-align: center;
   font-size: 0.9rem;
-  margin-top: auto;}
+  margin-top: auto;
+}
 
 /* === Tabla de Estudios === */
 .table-container {
@@ -177,13 +179,20 @@ footer {
 /* === Cuadrícula de Habilidades Técnicas === */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Ajuste automático */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(120px, 1fr)
+  ); /* Ajuste automático */
   gap: 20px; /* Espacio entre los elementos */
   padding: 10px; /* Espacio interno */
 }
-
+h2 {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
 .grid-item {
   display: flex;
+  margin-top: 40%;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -192,23 +201,22 @@ footer {
 
 .grid-item img {
   width: 80px;
-  height: 80px; 
-  object-fit: contain; 
+  height: 80px;
+  object-fit: contain;
   border-radius: 50%;
- 
 }
-
 
 .grid-item:hover {
   transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
-  
 }
-
 
 /* === Proyectos === */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste automático */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Ajuste automático */
   gap: 20px;
   padding: 20px;
 }
@@ -228,8 +236,6 @@ footer {
   max-width: 80%; /* Controla el tamaño de la imagen */
   margin: 0 auto; /* Asegura que la imagen esté centrada */
 }
-
-
 
 .project-card:hover {
   transform: translateY(-5px);
@@ -299,7 +305,6 @@ footer {
   margin: 0 auto 70px auto; /* Centra horizontalmente y mantiene el margen inferior */
 }
 
-
 .imagenIdiomas img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
@@ -322,12 +327,8 @@ footer {
   color: #f1f1f1;
 }
 
-
-
-
 /* === Móviles (Pantallas menores a 768px) === */
 @media (max-width: 767px) {
-
   /* Header */
   .header-container {
     display: flex;
@@ -354,6 +355,11 @@ footer {
     margin: 8px 0;
     font-size: 1.1rem;
     text-align: center; /* Centrar los enlaces de la barra de navegación */
+  }
+
+  h2 {
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 
   /* Otros ajustes de móviles permanecen igual */
@@ -383,7 +389,8 @@ footer {
   .barraNavegacion a {
     font-size: 1.1rem;
     margin: 0;
-  }}
+  }
+}
 
 /* === Tablets (768px a 1024px) === */
 @media (min-width: 768px) and (max-width: 1024px) {
