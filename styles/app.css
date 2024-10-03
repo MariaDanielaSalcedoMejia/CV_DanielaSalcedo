@@ -8,11 +8,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif; /* Fuente estándar */
-   display: flex;
+  display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 .main-content {
-  flex-grow: 1;
+  flex: 1;
 }
 
 .inactive {
@@ -110,11 +111,10 @@ body {
 footer {
   background-color: #3539345f;
   color: #d4af37;
-  padding: 2px 0;
+  padding: 10px 0;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
+  font-size: 0.9rem;
+  margin-top: auto;}
 
 /* === Tabla de Estudios === */
 .table-container {
@@ -321,15 +321,115 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: #f1f1f1;
 }
+/* === Móviles (Pantallas menores a 768px) === */
+@media (max-width: 767px) {
 
-/* === Diseño Responsivo === */
-
-/* === Tablets (Pantallas entre 768px y 1024px) === */
-@media (min-width: 768px) and (max-width: 1024px) {
   /* Header */
   .header-container {
-    padding: 10px;
+    padding: 10px 15px; /* Aumentamos el padding para mayor separación */
+    text-align: center; /* Centrar contenido */
+  }
+
+  .header-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .barraNavegacion {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+
+  .barraNavegacion a {
+    margin: 8px 0;
+    font-size: 1.1rem; /* Aumentamos el tamaño para mejorar legibilidad */
+  }
+
+  /* Contenedor Principal */
+  .contenedorPrincipal {
+    grid-template-columns: 1fr;
+    padding: 10px 15px; /* Ajustamos padding para mayor comodidad en pantallas pequeñas */
+  }
+
+  .fotoPerfil img {
+    max-width: 180px; /* Reducimos el tamaño de la imagen en móviles */
+  }
+
+  .informacionPersonal {
+    text-align: center;
+    margin-bottom: 20px; /* Añadimos separación adicional */
+  }
+
+  .nombre {
+    font-size: 1.7rem; /* Ligero aumento de tamaño de texto para mayor visibilidad */
+  }
+
+  .justified-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px; /* Aumentamos el espacio para mayor legibilidad */
+  }
+
+  /* Proyectos */
+  .project-grid {
+    grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .project-card img {
+    max-width: 85%; /* Aseguramos que la imagen se vea bien en móviles */
+    padding: 8px;
+  }
+
+  /* Cuadrícula de Habilidades Técnicas */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
+    gap: 10px; /* Reducimos el espacio entre elementos */
+  }
+
+  .grid-item img {
+    width: 60px; /* Ajustamos el tamaño de las imágenes para pantallas pequeñas */
+    height: 60px;
+  }
+
+  /* Sección de Idiomas */
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .idioma {
+    flex-direction: column;
+    gap: 10px; /* Añadimos espacio entre los elementos */
+  }
+
+  .barra-progreso {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .imagenIdiomas img {
+    margin-bottom: 30px;
+    width: 80%; /* Ajustamos el tamaño de la imagen */
+  }
+
+  /* Tabla de Estudios */
+  .table-container {
+    max-height: 300px; /* Ajustamos la altura máxima */
+    overflow-x: auto;
+  }
+
+  .table-container table {
+    font-size: 0.9rem;
+  }
+}
+
+/* === Tablets (768px a 1024px) === */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-container {
     flex-direction: row;
+    padding: 10px;
     justify-content: space-between;
   }
 
@@ -337,206 +437,37 @@ footer {
     font-size: 2rem;
   }
 
-  .barraNavegacion {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  /* Contenedor Principal */
   .contenedorPrincipal {
     grid-template-columns: 1fr 1fr;
     padding: 15px;
   }
 
   .fotoPerfil img {
-    max-width: 250px;
+    max-width: 230px; /* Ajustamos tamaño de la imagen para tablets */
   }
 
   .justified-text {
     font-size: 1.1rem;
   }
 
-  /* Tabla de Estudios */
-  .table-container {
-    max-height: 300px;
-  }
-
-  /* Cuadrícula de Habilidades Técnicas */
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
   }
 
-  /* Proyectos */
   .project-grid {
-    grid-template-columns: 1fr 1fr; /* Dos columnas para pantallas medianas */
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
-  }
-
-  .project-card {
-    padding: 15px;
-  }
-
-  .project-card img {
-    max-width: 90%; /* Ajusta el tamaño de la imagen para tabletas */
-  }
-}
-
-  /* Sección de Idiomas */
-  .section {
-    padding: 30px;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-/* === Móviles (Pantallas menores a 768px) === */
-@media (max-width: 767px) {
-  /* Header */
-  .header-container {
-    flex-direction: column;
-    padding: 15px;
-  }
-
-  .header-title {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-
-  .barraNavegacion {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .barraNavegacion a {
-    margin: 5px 0;
-    font-size: 1rem;
-  }
-
-  /* Contenedor Principal */
-  .contenedorPrincipal {
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }
-
-  .fotoPerfil {
-    margin-bottom: 20px;
-  }
-
-  .fotoPerfil img {
-    max-width: 200px;
-  }
-
-  .informacionPersonal {
-    align-items: center;
-    text-align: center;
-  }
-
-  .nombre {
-    font-size: 1.5rem;
-  }
-
-  .justified-text {
-    font-size: 0.95rem;
-    margin-right: 0;
-  }
-
-  /* Tabla de Estudios */
-  .table-container {
-    max-height: none;
-    overflow-x: auto;
-  }
-
-  .table-container table {
-    font-size: 0.9rem;
-  }
-
-  /* Cuadrícula de Habilidades Técnicas */
-  @media (max-width: 767px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
-  }
-
-  .grid-item img {
-    max-width: 60px; /* Tamaño de imagen más pequeño para móviles */
-  }
-}
-
-  /* Proyectos */
-  .project-grid {
-  grid-template-columns: 1fr;
-  padding: 10px;
-  gap: 15px;
-}
-
-.project-card {
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Sombra más sutil */
-  transition: transform 0.3s ease;
-}
-
-.project-card img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  padding: 10px; /* Reduce padding para imagen */
-}
-
-.project-card:hover {
-  transform: translateY(-3px); /* Reduce el efecto hover para un aspecto más limpio */
-}
-
-/* === Mejora del diseño para pantallas pequeñas (teléfonos y tabletas pequeñas) === */
-@media (max-width: 768px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-card {
-    padding: 10px;
-  }
-
-  .project-card img {
-    max-width: 80%; /* Reduce el tamaño de la imagen para móviles */
-  }
-}
-
-  /* Sección de Idiomas */
-  .section {
     padding: 20px;
   }
 
+  .project-card img {
+    max-width: 90%; /* Tamaño óptimo para imágenes en tablets */
+  }
+
+  /* Sección de Idiomas */
   .section-title {
-    font-size: 1.5rem;
-  }
-
-  .barra-progreso {
-    width: 100%;
-  }
-
-  .idioma {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .barra-progreso {
-    width: 100%;
-    margin-top: 5px;
-  }
-
-  .imagenIdiomas img {
-    margin-bottom: 20px;
-  }
-
-  /* Footer */
-  footer {
-    padding: 10px 0;
-    font-size: 0.9rem;
+    font-size: 1.8rem;
   }
 }
+
