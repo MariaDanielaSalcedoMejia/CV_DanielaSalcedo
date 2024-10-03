@@ -1,10 +1,18 @@
 /* === Estilos Globales === */
+html, body {
+  height: 100%;
+}
 body {
   background-color: #1a1a1a; /* Fondo oscuro */
   color: #d4af37; /* Color de texto dorado */
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif; /* Fuente estándar */
+   display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex-grow: 1;
 }
 
 .inactive {
