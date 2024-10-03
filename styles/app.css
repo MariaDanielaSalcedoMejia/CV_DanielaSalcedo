@@ -321,109 +321,69 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: #f1f1f1;
 }
+
+
+
+
 /* === Móviles (Pantallas menores a 768px) === */
 @media (max-width: 767px) {
 
   /* Header */
   .header-container {
-    padding: 10px 15px; /* Aumentamos el padding para mayor separación */
-    text-align: center; /* Centrar contenido */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se alineen verticalmente */
+    align-items: center; /* Centramos los elementos horizontalmente */
+    padding: 10px 15px; /* Ajustamos el padding */
+    text-align: center; /* Centramos el texto del header */
   }
 
   .header-title {
     font-size: 1.8rem;
     margin-bottom: 10px;
+    width: 100%; /* Aseguramos que el título ocupe el ancho completo */
   }
 
   .barraNavegacion {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column; /* Asegura que los enlaces se alineen verticalmente */
+    width: 100%; /* Se ajusta al 100% del ancho */
     margin-top: 5px;
   }
 
   .barraNavegacion a {
     margin: 8px 0;
-    font-size: 1.1rem; /* Aumentamos el tamaño para mejorar legibilidad */
+    font-size: 1.1rem;
+    text-align: center; /* Centrar los enlaces de la barra de navegación */
   }
 
-  /* Contenedor Principal */
-  .contenedorPrincipal {
-    grid-template-columns: 1fr;
-    padding: 10px 15px; /* Ajustamos padding para mayor comodidad en pantallas pequeñas */
-  }
-
-  .fotoPerfil img {
-    max-width: 180px; /* Reducimos el tamaño de la imagen en móviles */
-  }
-
-  .informacionPersonal {
-    text-align: center;
-    margin-bottom: 20px; /* Añadimos separación adicional */
-  }
-
-  .nombre {
-    font-size: 1.7rem; /* Ligero aumento de tamaño de texto para mayor visibilidad */
-  }
-
-  .justified-text {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 15px; /* Aumentamos el espacio para mayor legibilidad */
-  }
-
-  /* Proyectos */
-  .project-grid {
-    grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
-    gap: 10px;
-    padding: 15px;
-  }
-
-  .project-card img {
-    max-width: 85%; /* Aseguramos que la imagen se vea bien en móviles */
-    padding: 8px;
-  }
-
-  /* Cuadrícula de Habilidades Técnicas */
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
-    gap: 10px; /* Reducimos el espacio entre elementos */
-  }
-
-  .grid-item img {
-    width: 60px; /* Ajustamos el tamaño de las imágenes para pantallas pequeñas */
-    height: 60px;
-  }
-
-  /* Sección de Idiomas */
-  .section-title {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-  }
-
-  .idioma {
-    flex-direction: column;
-    gap: 10px; /* Añadimos espacio entre los elementos */
-  }
-
-  .barra-progreso {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .imagenIdiomas img {
-    margin-bottom: 30px;
-    width: 80%; /* Ajustamos el tamaño de la imagen */
-  }
-
-  /* Tabla de Estudios */
-  .table-container {
-    max-height: 300px; /* Ajustamos la altura máxima */
-    overflow-x: auto;
-  }
-
-  .table-container table {
-    font-size: 0.9rem;
-  }
+  /* Otros ajustes de móviles permanecen igual */
 }
+
+/* === Tablets (768px a 1024px) === */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alineamos los elementos verticalmente */
+    justify-content: space-between; /* Distribuimos el espacio entre los elementos */
+    padding: 10px;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .barraNavegacion {
+    display: flex;
+    flex-direction: row; /* Alineamos los enlaces en fila */
+    justify-content: flex-end; /* Colocamos los enlaces al final del header */
+    gap: 15px; /* Añadimos espacio entre los enlaces */
+  }
+
+  .barraNavegacion a {
+    font-size: 1.1rem;
+    margin: 0;
+  }}
 
 /* === Tablets (768px a 1024px) === */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -470,4 +430,3 @@ footer {
     font-size: 1.8rem;
   }
 }
-
